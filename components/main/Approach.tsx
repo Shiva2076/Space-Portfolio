@@ -2,7 +2,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const phases = [
+interface Phase {
+  phase: string;
+  title: string;
+  description: string;
+  color: string;
+}
+
+const phases: Phase[] = [
   {
     phase: "Phase 1",
     title: "Planning & Strategy",
@@ -24,7 +31,7 @@ const phases = [
 ];
 
 // SVG noise pattern for the sparkle effect
-const NoisePattern = () => (
+const NoisePattern: React.FC = () => (
   <svg className="absolute inset-0 w-full h-full opacity-[0.08]">
     <filter id="noiseFilter">
       <feTurbulence 
@@ -39,7 +46,7 @@ const NoisePattern = () => (
   </svg>
 );
 
-const PhaseCard = ({ phase, title, description, color }) => {
+const PhaseCard: React.FC<Phase> = ({ phase, title, description, color }) => {
   return (
     <motion.div
       whileHover={{ scale: 1.02 }}
@@ -59,7 +66,7 @@ const PhaseCard = ({ phase, title, description, color }) => {
       <div className="absolute inset-0 p-6 flex flex-col items-center justify-center 
                     opacity-0 group-hover:opacity-100 transition-all duration-500 
                     translate-y-full group-hover:translate-y-0 z-10">
-        <h3 className="text-2xl font-bold mb-4">{title}</h3>
+        <h3 className="text-2xl font-bold mb-4 text-center">{title}</h3>
         <p className="text-center text-gray-300">{description}</p>
       </div>
 
@@ -83,7 +90,7 @@ const PhaseCard = ({ phase, title, description, color }) => {
   );
 };
 
-const Approach = () => {
+const Approach: React.FC = () => {
   return (
     <section className="w-full min-h-screen py-16 flex flex-col items-center justify-center p-10">
       <h2 className="text-4xl font-bold text-white mb-10">
