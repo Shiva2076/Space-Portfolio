@@ -1,5 +1,4 @@
 import Link from "next/link";
-
 import { FOOTER_DATA } from "@/constants";
 
 export const Footer = () => {
@@ -15,7 +14,7 @@ export const Footer = () => {
               <h3 className="font-bold text-[16px]">{column.title}</h3>
               {column.data.map(({ icon: Icon, name, link }) => (
                 <Link
-                  key={`${column.title}-${name}`}
+                  key={`${column.title}-${name}`} // ✅ Corrected template literal
                   href={link}
                   target="_blank"
                   rel="noreferrer noopener"
@@ -30,7 +29,7 @@ export const Footer = () => {
         </div>
 
         <div className="mb-[20px] text-[15px] text-center">
-          &copy; John Doe {new Date().getFullYear()} Inc. All rights reserved.
+          &copy; Shiva {new Date().getFullYear()} Inc. All rights reserved.
         </div>
       </div>
     </div>

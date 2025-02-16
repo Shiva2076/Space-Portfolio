@@ -6,6 +6,7 @@ import {
   RxTwitterLogo,
   RxLinkedinLogo,
 } from "react-icons/rx";
+// import jira from '../public/skills/Jira.svg';
 
 export const SKILL_DATA = [
   {
@@ -44,36 +45,36 @@ export const SKILL_DATA = [
     width: 80,
     height: 80,
   },
-  {
-    skill_name: "React Query",
-    image: "reactquery.png",
-    width: 80,
-    height: 80,
-  },
+  // {
+  //   skill_name: "React Query",
+  //   image: "reactquery.png",
+  //   width: 80,
+  //   height: 80,
+  // },
   {
     skill_name: "TypeScript",
     image: "ts.png",
     width: 80,
     height: 80,
   },
-  {
-    skill_name: "Next.js 14",
-    image: "next.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Framer Motion",
-    image: "framer.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Stripe",
-    image: "stripe.png",
-    width: 80,
-    height: 80,
-  },
+  // {
+  //   skill_name: "Next.js 14",
+  //   image: "next.png",
+  //   width: 80,
+  //   height: 80,
+  // },
+  // {
+  //   skill_name: "Framer Motion",
+  //   image: "framer.png",
+  //   width: 80,
+  //   height: 80,
+  // },
+  // {
+  //   skill_name: "Stripe",
+  //   image: "stripe.png",
+  //   width: 80,
+  //   height: 80,
+  // },
   {
     skill_name: "Node.js",
     image: "node.png",
@@ -108,44 +109,44 @@ export const SOCIALS = [
 
 export const FRONTEND_SKILL = [
   {
-    skill_name: "HTML",
-    image: "html.png",
+    skill_name: "Jira",
+    image: "Jira.svg",
     width: 80,
     height: 80,
   },
   {
     skill_name: "CSS",
-    image: "css.png",
+    image: "Git.svg",
     width: 80,
     height: 80,
   },
   {
     skill_name: "JavaScript",
-    image: "js.png",
+    image: "GitHub.svg",
     width: 65,
     height: 65,
   },
   {
     skill_name: "Tailwind CSS",
-    image: "tailwind.png",
+    image: "C++ (CPlusPlus).svg",
     width: 80,
     height: 80,
   },
   {
     skill_name: "Material UI",
-    image: "mui.png",
+    image: "Python.svg",
     width: 80,
     height: 80,
   },
   {
     skill_name: "React",
-    image: "react.png",
+    image: "AWS.svg",
     width: 80,
     height: 80,
   },
   {
     skill_name: "Redux",
-    image: "redux.png",
+    image: "Vite.js.svg",
     width: 80,
     height: 80,
   },
@@ -163,7 +164,7 @@ export const FRONTEND_SKILL = [
   },
   {
     skill_name: "Next.js 14",
-    image: "next.png",
+    image: "NPM.svg",
     width: 80,
     height: 80,
   },
@@ -259,25 +260,25 @@ export const OTHER_SKILL = [
 
 export const PROJECTS = [
   {
-    title: "Modern Next.js 14 Portfolio",
+    title: "Restaurant Application",
     description:
-      'Embark on a journey through my professional evolution with the "Modern Next.js Portfolio" - a dynamic showcase of my skills, experiences, and passion for web development. Crafted with precision and powered by Next.js, this portfolio is more than just a static display; it\'s an immersive experience that reflects the cutting edge of modern web technologies.',
-    image: "/projects/project-1.png",
-    link: "https://example.com",
+      'Developed and launched a web-based reservation system, reducing average wait times by 30% and enhancing user experience. Implemented an interactive menu using React and MongoDB, increasing user engagement by 25%. Optimized backend performance and streamlined database queries, ensuring a seamless booking process and improving overall system efficiency.',
+    image: "/projects/Restaurant.png",
+    link: "https://restaurant-app-shiva.vercel.app/",
   },
   {
-    title: "Interactive Cards Portfolio",
+    title: "Chat App ",
     description:
-      'Step into the extraordinary world of my professional journey through the "Interactive Cards Portfolio" - an innovative and visually captivating platform that redefines the traditional portfolio experience. Ditching the conventional static layout, this portfolio leverages interactive cards to showcase my skills, projects, and personality in an engaging and dynamic manner.',
-    image: "/projects/project-2.png",
-    link: "https://example.com",
+      'Engineered a sophisticated chat system designed for more than 15,000 simultaneous users; achieved significant improvements in user interaction frequency by approximately 30%, fostering stronger community connections Optimized server response time by 40% through efficient backend implementation, significantly improving user satisfaction.',
+    image: "/projects/Chat.png",
+    link: "https://new-chat-app-shiv.vercel.app/email/",
   },
   {
-    title: "Space Themed Website",
+    title: "Razorpay",
     description:
-      'Embark on an interstellar journey with my "Space Themed Website", a mesmerizing space-themed website that invites you to explore the cosmic wonders beyond our world. Immerse yourself in an awe-inspiring digital experience that blends cutting-edge design with the mysteries of the universe.',
-    image: "/projects/project-3.png",
-    link: "https://example.com",
+      'Developed a secure payment gateway application with seamless user authentication and real-time transaction management. Designed a responsive UI and comprehensive dashboards to enhance usability while ensuring security standards. Implemented robust encryption and fraud detection mechanisms to safeguard transactions and improve user trust.',
+    image: "/projects/Razorpay.png",
+    link: "https://razorpay-shiva.netlify.app/",
   },
 ] as const;
 
