@@ -78,7 +78,7 @@ export const Contact = () => {
           to_email: "sj.980315@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_KEY
+        process.env.NEXT_PUBLIC_EMAILJS_KEY ?? ""
       )
       .then(() => toast.success("Thanks for contacting me."))
       .catch((error) => {
