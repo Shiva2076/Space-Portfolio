@@ -82,11 +82,13 @@ export const Experience = () => {
             </div>
             
             {typeof exp.icon === 'string' && exp.icon.includes('.svg') ? (
-              <img 
-                src={exp.icon}
-                alt={exp.title}
-                className="w-16 h-16 mb-4 relative z-10"
-              />
+              <Image 
+              src={exp.icon}
+              alt={exp.title}
+              width={64} // 👈 Add width (pixels)
+              height={64} // 👈 Add height (pixels)
+              className="w-16 h-16 mb-4 relative z-10"
+            />
             ) : (
               <span className="text-5xl mb-4 relative z-10">{exp.icon}</span>
             )}

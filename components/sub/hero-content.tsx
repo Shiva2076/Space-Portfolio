@@ -44,7 +44,7 @@ const TypewriterText = () => {
 
     timer = setTimeout(tick, typingSpeed);
     return () => clearTimeout(timer);
-  }, [text, isDeleting, loopNum, typingSpeed]);
+  }, [text, isDeleting, loopNum, typingSpeed, words]);
 
   return (
     <span>
