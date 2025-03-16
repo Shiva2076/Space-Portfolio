@@ -68,8 +68,9 @@ export const Contact = () => {
 
     emailjs
       .send(
-        import.meta.env.VITE_APP_SERVICE_ID,
-        import.meta.env.VITE_APP_TEMPLATE_ID,
+        process.env.NEXT_PUBLIC_SERVICE_ID,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID,
+        
         {
           from_name: form.name,
           to_name: "Shiva",
