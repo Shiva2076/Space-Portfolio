@@ -21,17 +21,17 @@ const TypewriterText = () => {
   const period = 2000;
 
   useEffect(() => {
-    let timer;
-    
+    let timer: ReturnType<typeof setTimeout>;
+  
     const tick = () => {
       let i = loopNum % words.length;
       let fullText = words[i];
-      let updatedText = isDeleting 
-        ? fullText.substring(0, text.length - 1) 
+      let updatedText = isDeleting
+        ? fullText.substring(0, text.length - 1)
         : fullText.substring(0, text.length + 1);
-
+  
       setText(updatedText);
-
+  
       if (!isDeleting && updatedText === fullText) {
         setTimeout(() => setIsDeleting(true), period);
         setTypingSpeed(100);
@@ -41,10 +41,10 @@ const TypewriterText = () => {
         setTypingSpeed(150);
       }
     };
-
+  
     timer = setTimeout(tick, typingSpeed);
     return () => clearTimeout(timer);
-  }, [text, isDeleting, loopNum, typingSpeed, words]);
+  }, [text, isDeleting, loopNum, typingSpeed, words]);  
 
   return (
     <span>
